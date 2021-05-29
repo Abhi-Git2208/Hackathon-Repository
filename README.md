@@ -11,6 +11,9 @@ The cameras are initially set up in a manner such that they remain still without
 
 # How To Run the Program
 
+Download the ALARM and the PROGRAM FILE in the same folder.
+Make sure that the library openCV is installed in the system before running this program.
+
 Initially when the program is run, it will ask for the number of cameras to be operated with. The user has to give the number of webcams which is presently connected to their PC.
 Once this is given the Program opens up as many cameras given by the user and reads the frames through them.
 
