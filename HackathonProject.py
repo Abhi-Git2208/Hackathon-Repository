@@ -21,13 +21,11 @@ def show_cam(cam_id):
             if cv.contourArea(c) < 500:
                 continue
 
-            # We get the x and y coordinates of the movement occurance and 
-            # bound it with an additional width of w and height h
+            # We get the x and y coordinates of the movement occurance and bound it with an additional width of w and height h
             x, y, w, h = cv.boundingRect(c)
             cv.rectangle(frame1, (x,y), (x+w,y+h), (100,100,255), 2)
 
-            # This is a Beep sound inbuilt in the python library which is best used for testing
-            # as u don't wanna be testng with such loud sound as the alarm.wav file given
+            # This is a Beep sound inbuilt in the python library which is best used for testing as u don't wanna be testng with such loud sound as the alarm.wav file given
             # ws.Beep(500,200)   
             ws.PlaySound('alarm.wav',ws.SND_ASYNC)
 
